@@ -1,4 +1,5 @@
-import SideNav from "@/app/ui/dashboard/sidenav";
+import Page from "@/app/dashboard/page";
+import SideNav from "../ui/dashboard/sidenav";
 
 export default function Layout() {
   return (
@@ -6,7 +7,10 @@ export default function Layout() {
       <div className="w-full flex-none md:w-64">
         <SideNav />
       </div>
-      <div className="flex-grow p-6 md:overflow-y-auto md:p-12"></div>
+
+      <div className="flex-grow p-4 md:overflow-y-auto md:p-12">
+        <Page />
+      </div>
     </div>
   );
 }
